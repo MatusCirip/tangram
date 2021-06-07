@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="tangram_styl.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+
+<div id="target">
+    <div id="zaciatokHry">
+        <h1> Tangram </h1>
+        <p>Cieľom hry je uložiť útvary v spodnej časti do čierneho štvorca uprostred tak aby ho cely vyplnili.</p>
+        <br>
+        <p>Útvary je možné otáčať pomocou kliknutia na ne.</p>
+        <br>
+        <button class="button" onclick="Hraj()"><span>Hraj</span></button>
+    </div>
+
+    <div id="koniecHry">
+        <h1>Vyhral si!</h1>
+        <br>
+        <p>Tvoj čas:</p>
+        <p id="cas"></p>
+        
+        <button class="button" onclick="znovu()"><span>hraj znovu</span></button>
+
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript" src="tangram_script.js"></script>
+</body>
+</html>

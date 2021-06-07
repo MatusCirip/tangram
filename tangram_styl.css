@@ -1,0 +1,84 @@
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+
+#target{
+	position: relative;
+	width: 1000px;
+	left: 182px;
+	top: 12px;
+}
+
+#zaciatokHry{
+	position: absolute;
+	width: 1000px;
+	height: 480px;
+	text-align: center;
+	vertical-align: center;
+	background-image: url("img2.jpg");
+}
+
+#koniecHry{
+	position: absolute;
+	width: 1000px;
+	height: 480px;
+	text-align: center;
+	vertical-align: center;
+	background-image: url("img2.jpg");
+	display: none;
+}
+
+p{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 20px;
+	color: gold;
+}
+
+h1{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 35px;
+	color: white;	
+	font-weight: bold;
+}
+
+
+
+.button {
+    font-size: 25px;
+    font-style: bold;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    box-sizing: border-box;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
